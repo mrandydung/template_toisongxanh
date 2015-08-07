@@ -1,0 +1,99 @@
+{% extends "Layout/layout.html"%}
+{% block body %}
+<link href="css/donate.css" rel="stylesheet">
+<div class="gray_bg box_3x">
+    <div class="container">
+        <div class="row box_2x">
+            <div class="col-md-12 text-center">
+                <p class="h2 blue_text text-uppercase">{{translate('Tham gia tài trợ')}}</p>
+            </div>
+        </div>
+        <div class="row box_2x">
+            <div class="col-md-12">
+                <p class="h4 text-uppercase">{{translate('Tôi là')}}</p>
+            </div>
+            <div class="col-md-2">
+                <label><input type="radio" name="user"/>{{translate(' Cá nhân')}}</label>
+            </div>
+            <div class="col-md-2">
+                <label><input type="radio" name="user"/>{{translate(' Tổ chức')}}</label>
+            </div>
+        </div>
+        <div class="row box_1x">
+            <div class="col-md-12">
+                <p class="h4 text-uppercase">{{translate('Hình thức tài trợ')}}</p>
+            </div>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>Tài trợ tiền</option>
+                    <option>Hình thức khác</option>
+                </select>
+            </div>
+        </div>
+        <div id="donate_money">
+            <div class="row box_2x">
+                <div class="col-md-12">
+                    <p class="h4 text-uppercase">{{translate('Chọn số tiền Tài trợ:')}}</p>
+                </div>
+                {% include 'Layout/_layout_select_money.html' %}
+            </div>
+            <div class="row box_2x customer_info">
+                <div class="col-md-12">
+                    <p class="h4 text-uppercase">{{translate('Thông tin người tài trợ')}}</p>
+                </div>
+                <div class="col-md-6">
+                    {% include 'Layout/_customer_info.html' %}
+                    {% include 'Layout/_customer_creataccount.html' %}
+                </div>
+                <div class="col-md-12">
+                    <div class="row padding_top">
+                        <div class="col-md-offset-2 col-md-10">
+                            <label>
+                                <input type="checkbox"> Tôi muốn nhận giấy chứng nhận tài trợ
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row padding_top">
+                        <div class="col-md-offset-2 col-md-10">
+                            <label>
+                                <input type="checkbox" id="gift"> Tôi muốn tặng giấy nhận tài trợ cho người khác
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="show_gift">
+                        {% include 'Layout/_customer_info.html' %}
+                    </div>
+                </div>
+            </div>
+            <div class="row box_2x">
+                {% include 'Layout/_layout_paymethod.html' %}
+            </div>
+        </div>
+        <div id="donate_other">
+            <div class="row box_2x">
+                <div class="col-md-12">
+                    <p class="h4 text-uppercase">{{translate('Mô tả')}}</p>
+                </div>
+                <div class="col-md-12">
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row box_2x">
+                <div class="col-md-12">
+                    <p class="h4 text-uppercase">{{translate('Thông tin người tài trợ')}}</p>
+                </div>
+                <div class="col-md-6">
+                    {% include 'Layout/_customer_info.html' %}
+                    {% include 'Layout/_customer_creataccount.html' %}
+                </div>
+            </div>
+        </div>
+        <div class="row box_1x">
+            <div class="col-md-offset-4 col-md-4">
+                <a href="balance-step4.php"><button class="btn_width round_btn btn_blue btn-lg">{{translate('Thanh toán')}}</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

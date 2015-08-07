@@ -1,0 +1,18 @@
+{% extends "Layout/layout.html"%}
+
+{% block body %}
+<link href="css/balance.css" rel="stylesheet">
+    <div class="gray_bg box_2x">
+        <div class="container">
+            <div class="row box_1x">
+                <div class="col-md-12 text-center">
+                    <p class="h2 blue_text text-uppercase">{{translate('Trung hòa khí thải')}}</p>
+                </div>
+            </div>
+
+            {% include 'Balance/_balance_2_step1.html' %}
+            {% include 'Balance/_balance_2_step3.html' %}
+            {% include 'Balance/_balance_step4.html' %}
+        </div>
+    </div>
+{% endblock %}

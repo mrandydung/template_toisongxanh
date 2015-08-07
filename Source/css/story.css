@@ -1,0 +1,25 @@
+.user{overflow: hidden;margin-bottom: 10px;}
+.user .ava{
+    width: 100%;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.text_collap{
+    display: -webkit-box;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.location {
+    background-image: url("../img/donate.png");
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-position: 2px 0;
+    vertical-align: -2px;
+}

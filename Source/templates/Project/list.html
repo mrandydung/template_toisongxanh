@@ -1,0 +1,41 @@
+{% extends "Layout/layout.html"%}
+{% block body %}
+<link href="css/project.css" rel="stylesheet">
+<div class="gray_bg box_3x">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="h3 blue_text text-uppercase">{{translate('Các dự án')}}</p>
+                <p class="box_1x">{{translate('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum')}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-9 col-md-3">
+                <select class="form-control">
+                    <option>Phân loại 1</option>
+                    <option>Phân loại 2</option>
+                    <option>Phân loại 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 box_2x">
+                {% include 'Project/_list_project.html' %}
+            </div>
+            <div class="col-md-4 box_2x">
+                {% include 'Project/_list_project.html' %}
+            </div>
+            <div class="col-md-4 box_2x">
+                {% include 'Project/_list_project.html' %}
+            </div>
+            <div class="col-md-4 box_2x">
+                {% include 'Project/_list_project.html' %}
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

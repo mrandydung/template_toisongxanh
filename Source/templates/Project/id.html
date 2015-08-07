@@ -1,0 +1,42 @@
+{% extends "Layout/layout.html"%}
+
+{% block body %}
+<link href="css/main.css" rel="stylesheet">
+<link href="css/project.css" rel="stylesheet">
+<div class="gray_bg box_3x project_title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="h3 blue_text text-uppercase">{{translate('Trồng cây gây rừng')}}</p>
+            </div>
+            <div class="col-md-12 box_1x">
+                <p><a href="account-transaction.php"><span class="avatar_user"><img src="img/avatar.jpg"></span>Công Văn Quang</a></p>
+            </div>
+            <div class="col-md-3 box_1x">
+                <a><div class="project-child">
+                    <img src="img/tree.jpg" width="100%">
+                    <p class="padding_top"><strong>{{translate('12/6/2015')}}</strong></p>
+                </div></a>
+            </div>
+            <div class="col-md-3 box_1x">
+                <a><div class="project-child">
+                    <img src="img/tree.jpg" width="100%">
+                    <p class="padding_top"><strong>{{translate('12/1/2015')}}</strong></p>
+                </div></a>
+            </div>
+            <div class="col-md-3 box_1x">
+                <a><div class="project-child">
+                    <img src="img/tree.jpg" width="100%">
+                    <p class="padding_top"><strong>{{translate('12/6/2014')}}</strong></p>
+                </div></a>
+            </div>
+            <div class="col-md-3 box_1x">
+                <a><div class="project-child">
+                    <img src="img/tree.jpg" width="100%">
+                    <p class="padding_top"><strong>{{translate('12/1/2014')}}</strong></p>
+                </div></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

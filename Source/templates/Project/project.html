@@ -1,0 +1,27 @@
+{% extends "Layout/layout.html"%}
+{% block body %}
+<link href="css/project.css" rel="stylesheet">
+<div class="gray_bg box_3x project_title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="h3 blue_text text-uppercase">{{translate('Trồng cây gây rừng')}}</p>
+                <p><a>{{translate('Dự án')}}</a></p>
+            </div>
+            <div class="col-md-4">
+                <a href="donate.php"><button class="btn btn-lg btn_width btn_blue">Đóng góp</button></a>
+            </div>
+        </div>
+        <div class="row box_1x">
+            <div class="col-md-8">
+                {% include 'Project/_project_description.html' %}
+                {% include 'Project/_project_part.html' %}
+            </div>
+            <div class="col-md-4">
+                {% include 'Project/_project_donator.html' %}
+                {% include 'Project/_project_partner.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

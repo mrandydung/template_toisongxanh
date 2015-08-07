@@ -1,0 +1,64 @@
+{% extends "Layout/layout.html"%}
+
+{% block body %}
+<link href="css/main.css" rel="stylesheet">
+<link href="css/balance.css" rel="stylesheet">
+<div class="gray_bg box_2x">
+    <div class="container">
+        <div class="row box_1x">
+            <div class="col-md-12">
+                <p class="h3 blue_text">{{translate('Trung hòa khí thải')}}</p>
+            </div>
+        </div>
+        {% include 'Balance/_balance_step.html' %}
+        <div class="row box_1x">
+            <div class="col-md-12">
+                <p><strong>{{translate('Loại phương tiện:')}}</strong></p>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4 box_1x text-center">
+                <label class="balance_choose" name="balance_form[kind]">
+                    <span class="oto"></span>
+                    <p class="h5 box_1x">{{translate('Ô tô')}}</p>
+                    <input type="radio" name="booking_form[kind]">
+                </label>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4 box_1x text-center">
+                <label class="balance_choose" name="balance_form[kind]">
+                    <span class="dilai"></span>
+                    <p class="h5 box_1x">{{translate('Xe máy')}}</p>
+                    <input type="radio" name="booking_form[kind]">
+                </label>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4 box_1x text-center">
+                <label class="balance_choose" name="balance_form[kind]">
+                    <span class="maybay"></span>
+                    <p class="h5 box_1x">{{translate('Máy bay')}}</p>
+                    <input type="radio" name="booking_form[kind]">
+                </label>
+            </div>
+        </div>
+        <div class="row box_1x">
+            <div class="col-md-12">
+                <p><strong>{{translate('Số km đã đi:')}}</strong></p>
+                <input type="text" class="text-right"> km
+            </div>
+        </div>
+        <div class="row box_1x">
+            <div class="col-md-12">
+                <p><strong>{{translate('Loại nhiên liệu:')}}</strong></p>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control">
+                    <option>{{translate('Xăng')}}</option>
+                    <option>{{translate('Dầu')}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="row box_1x">
+            <div class="col-md-offset-4 col-md-4">
+                <a href="balance-step2.php"><button class="btn_width round_btn btn_blue btn-lg">{{translate('Tính toán xả thải')}}</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

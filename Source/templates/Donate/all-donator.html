@@ -1,0 +1,23 @@
+{% extends "/Layout/layout.html"%}
+{% block body %}
+<link href="/css/donate.css" rel="stylesheet">
+<div class="gray_bg box_3x project_title">
+    <div class="container">
+        <div class="row box_1x">
+            <div class="col-md-12 box_1x">
+                <p class="h3 blue_text text-uppercase">{{translate('Danh sách những người đóng góp')}}</p>
+                <p>135 người đóng góp</p>
+            </div>
+            <div class="col-md-12">
+                {% include 'Donate/_all-donator_donator.html' %}
+            </div>
+            <div class="col-md-12">
+                {% include 'Donate/_all-donator_donator.html' %}
+            </div>
+            <div class="col-md-12">
+                {% include 'Donate/_all-donator_donator.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

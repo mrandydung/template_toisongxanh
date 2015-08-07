@@ -1,0 +1,22 @@
+{% extends "/Layout/layout.html"%}
+{% block body %}
+<link href="/css/story.css" rel="stylesheet">
+<div class="gray_bg box_2x">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center box_2x">
+                <p class="h2 blue_text">Câu chuyện sống xanh</p>
+            </div>
+        </div>
+        <div class="row">
+            {% include '/Story/_list-story_story.html' %}
+        </div>
+        <div class="row">
+            {% include '/Story/_list-story_story.html' %}
+        </div>
+        <div class="row">
+            {% include '/Story/_list-story_story.html' %}
+        </div>
+    </div>
+</div>
+{% endblock %}

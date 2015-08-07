@@ -1,0 +1,46 @@
+{% extends "/Layout/layout.html"%}
+
+{% block body %}
+<link href="css/account.css" rel="stylesheet">
+    <div class="gray_bg box_3x account_info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="account-info.php"><span class="user_icon"></span> {{translate('Thông tin người dùng')}}</a></li>
+                        <li class="active"><a><span class="transaction_icon"></span> {{translate('Quản lí giao dịch')}}</a></li>
+                        <li><a href="account-config.php"><span class="config_icon"></span> {{translate('Cài đặt')}}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="info_content box_2x">
+                        <div class="table-responsive">
+                            <table class="table table-hover text-center">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">Mã giao dịch</th>
+                                    <th class="text-center">Dự án</th>
+                                    <th class="text-center">Đợt</th>
+                                    <th class="text-center">Ngày giao dịch</th>
+                                    <th class="text-center">Số tiền</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    {% include 'Account/_transaction_project.html' %}
+                                </tr>
+                                <tr>
+                                    {% include 'Account/_transaction_project.html' %}
+                                </tr>
+                                <tr>
+                                    {% include 'Account/_transaction_project.html' %}
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

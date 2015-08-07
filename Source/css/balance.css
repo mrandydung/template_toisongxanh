@@ -1,0 +1,102 @@
+.balance_choose{
+    display: block;
+}
+.canhan{
+    background-image: url("../img/balance_img.png");
+    background-position: -9px 0;
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: 0 auto;
+}
+.tochuc{
+    background-image: url("../img/balance_img.png");
+    background-position: -102px 0;
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: 0 auto;
+}
+.dilai {
+    background-image: url("../img/balance_img.png");
+    background-position: 1px -75px;
+    width: 91px;
+    height: 67px;
+    display: block;
+    margin: 0 auto;
+}
+.sinhhoat {
+    background-image: url("../img/balance_img.png");
+    background-position: -216px 0;
+    width: 36px;
+    height: 67px;
+    display: block;
+    margin: 0 auto;
+}
+.sukien {
+    background-image: url("../img/balance_img.png");
+    background-position: -97px -81px;
+    width: 91px;
+    height: 67px;
+    display: block;
+    margin: 0 auto;
+}
+.step {width: 100%;}
+.step>tbody>tr>td{
+    width: 25%;
+    padding: 5px 10px;
+    background-color: #e5e5e5;
+    border: 1px solid #FFFFFF;
+}
+.oto {
+    background-image: url("../img/balance_img.png");
+    background-position: -198px -80px;
+    width: 74px;
+    height: 67px;
+    display: block;
+    margin: 0 auto;
+}
+.maybay {
+    background-image: url("../img/balance_img.png");
+    background-position: -285px 1px;
+    width: 96px;
+    height: 67px;
+    display: block;
+    margin: 0 auto;
+}
+.tauhoa{
+    background-image: url("../img/balance_img.png");
+    background-position: -305px -81px;
+    width: 50px;
+    height: 67px;
+    display: block;
+    margin: 0 auto;
+}
+.tauthuy{
+    background-image: url("../img/balance_img.png");
+    background-position: -409px 0px;
+    width: 65px;
+    height: 67px;
+    display: block;
+    margin: 0 auto;
+}
+.balance_choose>.service{
+    background-color: #FFFFFF;
+    border: 1px solid #e5e5e5;
+}
+.customer_info p{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 0;
+}
+#show_open_account, #show_gift, #show_kind1, #show_kind2, #show_kind3, .step1_data_1, .step1_data_2, .step1_data_3, .step1_data_4{display: none}
+.body_balance{
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 3px solid #E2E2E2;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.select_money label{
+    display: block;
+}

@@ -1,0 +1,57 @@
+.account_info ul{
+    padding: 0;
+}
+.account_info ul>li{
+    list-style: none;
+}
+.account_info ul>li>a{
+    padding: 10px 0;
+    display: block;
+}
+.account_info ul>li.active>a{
+    color: #2980b9;
+}
+.user_icon{
+    background-image: url("../img/account_img.png");
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+    background-position: -5px -3px;
+    vertical-align: -2px;
+}
+.active .user_icon{
+    background-position: -27px -3px;
+}
+.transaction_icon{
+     background-image: url("../img/account_img.png");
+     width: 16px;
+     height: 18px;
+     display: inline-block;
+     background-position: -4px -24px;
+     vertical-align: -2px;
+ }
+.active .transaction_icon{
+    background-position: -27px -24px;
+}
+.config_icon{
+    background-image: url("../img/account_img.png");
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+    background-position: -4px -67px;
+    vertical-align: -2px;
+}
+.active .config_icon{
+    background-position: -27px -67px;
+}
+.info_content{
+    border: 1px solid #e5e5e5;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    min-height: 300px;
+}
+.info_content p{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,33 @@
+{% extends "Layout/layout.html"%}
+
+{% block body %}
+<link href="css/balance.css" rel="stylesheet">
+<div class="gray_bg box_2x">
+    <div class="container">
+        <div class="row box_1x">
+            <div class="col-md-12">
+                <p class="h3 blue_text">{{translate('Trung hòa khí thải')}}</p>
+            </div>
+        </div>
+        {% include 'Balance/_balance_step.html' %}
+        <div class="row box_1x">
+            <div class="col-md-12">
+                <p class="blue_text"><strong>{{translate('Lượng khí thải thoát ra môi trường là:')}}</strong></p>
+            </div>
+        </div>
+        <div class="row box_1x">
+            <div class="col-md-12">
+                <p><strong>{{translate('Để trung hòa khí thải xin hãy chọn một trong những dự án dưới đây:')}}</strong></p>
+            </div>
+            {% include 'Balance/_balance_step2_service.html' %}
+            {% include 'Balance/_balance_step2_service.html' %}
+            {% include 'Balance/_balance_step2_service.html' %}
+        </div>
+        <div class="row box_1x">
+            <div class="col-md-offset-4 col-md-4">
+                <a href="balance-step3.php"><button class="btn_width round_btn btn_blue btn-lg">{{translate('Điền thông tin')}}</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

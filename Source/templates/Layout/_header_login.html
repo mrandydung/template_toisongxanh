@@ -1,0 +1,62 @@
+<!-- _header.html -->
+<div class="decor">
+    <div class="head_decor green_bg"></div>
+    <div class="head_decor dark_puple_bg"></div>
+    <div class="head_decor blue_bg"></div>
+    <div class="head_decor blue_gray_bg"></div>
+    <div class="head_decor red_bg"></div>
+    <div class="head_decor green_bg"></div>
+    <div class="head_decor dark_puple_bg"></div>
+    <div class="head_decor blue_bg"></div>
+    <div class="head_decor blue_gray_bg"></div>
+    <div class="head_decor red_bg"></div>
+</div>
+<nav class="navbar navbar-inverse greenlive_navbar" role="navigation">
+    <div class="container">
+        <div class="nav navbar-nav navbar-right language">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn_blue active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked=""> VN
+                </label>
+                <label class="btn btn_blue">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> EN
+                </label>
+            </div>
+        </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="avatar_user"><img src="img/avatar.jpg"></span>quynhvh@dichung.vn <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="account-info.php"><span class="user_icon"></span> {{translate('Thông tin người dùng')}}</a></li>
+                                <li><a href="account-transaction.php"><span class="transaction_icon"></span> {{translate('Quản lí dịch vụ')}}</a></li>
+                                <li><a href=""><span class="logout_icon"></span> {{translate('Đăng xuất')}}</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <form class="search-wrapper cf">
+                        <input type="text" placeholder="Mã giao dịch" required="">
+                        <button type="submit">Tìm</button>
+                    </form>
+                </li> -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>

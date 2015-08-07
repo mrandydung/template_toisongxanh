@@ -1,0 +1,41 @@
+<!-- Balance/_balance_2_step1.html -->
+<div class="body_balance">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <div class="row">
+                <div class="col-md-12 box_1x">
+                    <p><strong>{{translate('Cách thức giảm thải')}}</strong></p>
+                    <select class="form-control">
+                        <option>{{translate('Theo CO2')}}</option>
+                        <option>{{translate('Theo đóng góp')}}</option>
+                    </select>
+                </div>
+                <div class="col-md-12 box_1x">
+                    <p><strong>{{translate('Số tiền đóng góp')}}</strong></p>
+                    <select class="form-control">
+                        <option>{{translate('500.000 VNĐ')}}</option>
+                        <option>{{translate('200.000 VNĐ')}}</option>
+                        <option>{{translate('Khác')}}</option>
+                    </select>
+                    <p class="padding_top">{{translate('Nhập số tiền:')}}</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control text-right" aria-describedby="basic-addon2">
+                        <span class="input-group-addon" id="basic-addon2">{{translate('VNĐ')}}</span>
+                    </div>
+                </div>
+                <div class="col-md-12 box_1x">
+                    <p class="padding_top"><strong>{{translate('Nhập khối lượng CO2 muốn giảm thải:')}}</strong></p>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-right" aria-describedby="basic-addon2">
+                        <span class="input-group-addon" id="basic-addon2">{{translate('Tấn')}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row box_1x">
+        <div class="col-md-offset-4 col-md-4">
+            <button class="btn_width round_btn btn_blue btn-lg">{{translate('Thanh toán')}}</button>
+        </div>
+    </div>
+</div>

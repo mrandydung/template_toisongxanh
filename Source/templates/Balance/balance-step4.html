@@ -1,0 +1,44 @@
+{% extends "Layout/layout.html"%}
+
+{% block body %}
+<link href="css/balance.css" rel="stylesheet">
+<div class="gray_bg box_2x">
+    <div class="container">
+        <div class="row box_1x">
+            <div class="col-md-12">
+                <p class="h3 blue_text">{{translate('Trung hòa khí thải')}}</p>
+            </div>
+        </div>
+        {% include 'Balance/_balance_step.html' %}
+        <div class="row">
+            <div class="col-md-3 box_1x">
+                <p><strong>{{translate('Số tiền thanh toán')}}</strong></p>
+                <select class="form-control">
+                    <option>{{translate('500.000 VNĐ')}}</option>
+                    <option>{{translate('200.000 VNĐ')}}</option>
+                    <option>{{translate('Khác')}}</option>
+                </select>
+                <p class="padding_top">{{translate('Nhập số tiền:')}}</p>
+                <div class="input-group">
+                    <input type="text" class="form-control text-right" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">{{translate('VNĐ')}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 box_1x">
+                <p><strong>{{translate('Phương thức thanh toán')}}</strong></p>
+                <select class="form-control">
+                    <option>{{translate('Thanh toán online')}}</option>
+                    <option>{{translate('Thanh toán chuyển khoản')}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="row box_1x">
+            <div class="col-md-offset-4 col-md-4">
+                <button class="btn_width round_btn btn_blue btn-lg">{{translate('Thanh toán')}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

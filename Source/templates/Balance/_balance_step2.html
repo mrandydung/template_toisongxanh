@@ -1,0 +1,24 @@
+<!-- /Balance/_balance_step2.html -->
+<div class="body_balance box_1x">
+    <div class="box_1x">
+        <div class="col-md-12">
+            <h4><strong>{{translate('Để trung hòa khí thải xin hãy chọn một trong những dự án dưới đây:')}}</strong></h4>
+        </div>
+        {% include 'Balance/_balance_step2_service.html' %}
+        {% include 'Balance/_balance_step2_service.html' %}
+        {% include 'Balance/_balance_step2_service.html' %}
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <h4><strong>{{translate('Chọn số tiền đóng góp:')}}</strong></h4>
+            </div>
+            {% include 'Layout/_layout_select_money.html' %}
+        </div>
+    </div>
+    <div class="row box_2x">
+        <div class="col-md-offset-4 col-md-4">
+            <a><button class="btn_width round_btn btn_blue btn-lg">{{translate('Điền thông tin')}}</button></a>
+        </div>
+    </div>
+</div>

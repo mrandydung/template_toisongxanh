@@ -1,0 +1,38 @@
+.activity{
+    margin: 40px auto;
+}
+.activity tr>td{
+    padding: 0 20px;
+}
+.activity .tivi{
+    background-image: url("../img/activities.png");
+    background-position: 0 0;
+    width: 87px;
+    height: 61px;
+}
+.activity .dieuhoa{
+    background-image: url("../img/activities.png");
+    background-position: -107px 0px;
+    width: 79px;
+    height: 61px;
+}
+.activity .dichuyen{
+    background-image: url("../img/activities.png");
+    background-position: -205px 0;
+    width: 97px;
+    height: 61px;
+}
+.text_collap{
+    display: -webkit-box;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+.user{margin: 20px 0; overflow: hidden}
+.user .ava{
+    border-radius: 50%;
+}

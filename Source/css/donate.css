@@ -1,0 +1,23 @@
+#show_open_account, #show_gift {display: none}
+.location{
+    background-image: url("../img/donate.png");
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-position: 2px 0;
+    vertical-align: -2px;
+}
+.money{
+    background-image: url("../img/donate.png");
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-position: 17px 0;
+    vertical-align: -2px;
+}
+.donator_info p{
+    line-height: 18px;
+}
+.select_money label{
+    display: block;
+}

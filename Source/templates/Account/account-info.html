@@ -1,0 +1,34 @@
+{% extends "/Layout/layout.html"%}
+
+{% block body %}
+<link href="css/account.css" rel="stylesheet">
+    <div class="gray_bg box_3x account_info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li class="active"><a><span class="user_icon"></span> {{translate('Thông tin người dùng')}}</a></li>
+                        <li><a href="account-transaction.php"><span class="transaction_icon"></span> {{translate('Quản lí giao dịch')}}</a></li>
+                        <li><a href="account-config.php"><span class="config_icon"></span> {{translate('Cài đặt')}}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="info_content box_2x">
+                        <div class="col-md-3">
+                            <img src="img/avatar.jpg" width="100%">
+                            <div class="box_1x text-center">
+                                <button class="btn btn_blue">Chọn ảnh đại diện</button>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            {% include 'Layout/_customer_info.html' %}
+                        </div>
+                        <div class="col-md-offset-4 col-md-4 box_1x">
+                            <button class="btn btn_width round_btn btn_blue">{{translate('Cập nhật')}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
